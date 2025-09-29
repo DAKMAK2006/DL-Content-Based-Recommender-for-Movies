@@ -34,8 +34,8 @@ The model employs a dual-tower structure, where identical sub-networks process u
 | **Total Training Examples** | **50,884** (Ratings are duplicated to balance underrepresented genres). |
 | **Feature Scaling** | **`StandardScaler`** for input features; **`MinMaxScaler`** for target ratings ($y$) to scale them between $\mathbf{-1}$ and $\mathbf{1}$. |
 | **Loss Function** | **Mean Squared Error (`mse`)**. |
-| **Optimizer** | **Adam** ($\text{learning\_rate}=0.01$). |
-| **Model Performance** | Test loss of **$\approx 0.0815$**, comparable to training loss, indicating good generalization. |
+| **Optimizer** | **Adam** (`learning_rate = 0.01`). |
+| **Model Performance** | Test loss of $\mathbf{\approx 0.0815}$, comparable to training loss, indicating good generalization. |
 
 ---
 
@@ -53,11 +53,12 @@ The trained model is demonstrated through key recommender system applications:
 
 ---
 
-## 🚀 Get Started
+## 🚀 How to Run
 
-The complete implementation is contained in the Python notebook: `Mushroom_Edibility_Classifier.ipynb`.
-
-### Required Packages
-
+1.  Clone this repository.
+2.  Ensure you have **NumPy**, **pandas**, **tensorflow** and **scikit-learn** installed:
 ```bash
 pip install numpy pandas tensorflow scikit-learn tabulate
+```
+3. Open the file `Deep_Learning_Content_Filtering.ipynb` in Jupyter Notebook or JupyterLab.
+4. Execute the cells sequentially to generate the predictions of movies for Different kinds of users.
